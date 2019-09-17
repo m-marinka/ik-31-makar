@@ -1,4 +1,4 @@
-Reference-style: 
+ 
 ![alt text][logo]
 
 [logo]: https://github.com/m-marinka/ik-31-makar/blob/master/Lab_1/Записати.PNG "title"
