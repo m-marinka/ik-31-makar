@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.3, pytest-5.2.4, py-1.8.0, pluggy-0.13.0
+rootdir: /home/vasa/Desktop/devops/ik-31-makar/lab_2
+collected 4 items
+
+tests/tests.py ....                                                      [100%]
+
+============================== 4 passed in 0.64s ===============================
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Time is:  07:02:10 PM
+Доброго дня!
+Date is:  11-16-2019
