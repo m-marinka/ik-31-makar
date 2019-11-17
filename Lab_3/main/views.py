@@ -9,7 +9,6 @@ def main(request):
     return render(request, 'main.html', {'parameter': "test"})
 
 
-
 def health(request):
     response = {'date': datetime.today(),
                 'current_page': request.path,
