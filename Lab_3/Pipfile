@@ -11,3 +11,7 @@ requests = "*"
 
 [requires]
 python_version = "3.7"
+
+[scrips]
+server = "python manage.py runserver"
+monitoring = "python monitoring.py &"

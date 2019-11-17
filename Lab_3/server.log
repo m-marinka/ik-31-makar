@@ -1,0 +1,30 @@
+ERROR 2019-11-17 17:25:16,982 root : Server is not available. Please, reboot server. Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fadac30b8>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ERROR 2019-11-17 17:26:47,371 root : Server is not available. Please, reboot server. Error: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6e43319128>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO 2019-11-17 17:27:47,483 root : Server is not available. Time on the server: 2019-11-17T15:27:47.441
+INFO 2019-11-17 17:27:47,483 root : Requested page: : /health/
+INFO 2019-11-17 17:27:47,483 root : Server response contains the following fields:
+INFO 2019-11-17 17:27:47,484 root : Key: date, Value: 2019-11-17T15:27:47.441
+INFO 2019-11-17 17:27:47,484 root : Key: current_page, Value: /health/
+INFO 2019-11-17 17:27:47,484 root : Key: server_info, Value: {'system': 'Linux', 'version': '#21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018', 'release': '4.15.0-20-generic', 'network name': 'vasa-mint', 'machine': 'x86_64', 'processor': 'x86_64'}
+INFO 2019-11-17 17:27:47,484 root : Key: client_info, Value: python-requests/2.22.0
+INFO 2019-11-17 17:28:47,591 root : Server is not available. Time on the server: 2019-11-17T15:28:47.549
+INFO 2019-11-17 17:28:47,591 root : Requested page: : /health/
+INFO 2019-11-17 17:28:47,591 root : Server response contains the following fields:
+INFO 2019-11-17 17:28:47,591 root : Key: date, Value: 2019-11-17T15:28:47.549
+INFO 2019-11-17 17:28:47,592 root : Key: current_page, Value: /health/
+INFO 2019-11-17 17:28:47,592 root : Key: server_info, Value: {'system': 'Linux', 'version': '#21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018', 'release': '4.15.0-20-generic', 'network name': 'vasa-mint', 'machine': 'x86_64', 'processor': 'x86_64'}
+INFO 2019-11-17 17:28:47,592 root : Key: client_info, Value: python-requests/2.22.0
+INFO 2019-11-17 17:29:47,703 root : Server is not available. Time on the server: 2019-11-17T15:29:47.659
+INFO 2019-11-17 17:29:47,703 root : Requested page: : /health/
+INFO 2019-11-17 17:29:47,703 root : Server response contains the following fields:
+INFO 2019-11-17 17:29:47,703 root : Key: date, Value: 2019-11-17T15:29:47.659
+INFO 2019-11-17 17:29:47,704 root : Key: current_page, Value: /health/
+INFO 2019-11-17 17:29:47,704 root : Key: server_info, Value: {'system': 'Linux', 'version': '#21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018', 'release': '4.15.0-20-generic', 'network name': 'vasa-mint', 'machine': 'x86_64', 'processor': 'x86_64'}
+INFO 2019-11-17 17:29:47,704 root : Key: client_info, Value: python-requests/2.22.0
+INFO 2019-11-17 17:30:47,815 root : Server is not available. Time on the server: 2019-11-17T15:30:47.772
+INFO 2019-11-17 17:30:47,815 root : Requested page: : /health/
+INFO 2019-11-17 17:30:47,815 root : Server response contains the following fields:
+INFO 2019-11-17 17:30:47,815 root : Key: date, Value: 2019-11-17T15:30:47.772
+INFO 2019-11-17 17:30:47,815 root : Key: current_page, Value: /health/
+INFO 2019-11-17 17:30:47,815 root : Key: server_info, Value: {'system': 'Linux', 'version': '#21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018', 'release': '4.15.0-20-generic', 'network name': 'vasa-mint', 'machine': 'x86_64', 'processor': 'x86_64'}
+INFO 2019-11-17 17:30:47,816 root : Key: client_info, Value: python-requests/2.22.0
