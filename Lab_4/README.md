@@ -23,7 +23,7 @@
     ```bash
     docker build -t mmarinka/lab4-examples:django .
     docker images
-    dokcer push mmarinka/lab4-examples:django
+    docker push mmarinka/lab4-examples:django
     ```
    [Посилання на Docker репозиторій](https://hub.docker.com/repository/docker/mmarinka/lab4-examples)
    
@@ -33,7 +33,14 @@
     ```bash
     docker run -it --name=django --rm -p 8000:8000 mmarinka/lab4-examples:django
     ``` 
-    - перейдіть на адресу `http://127.0.0.1:8000` та переконуюсь що веб-сайт працює:
+    - переходжу на адресу `http://127.0.0.1:8000` та переконуюсь що веб-сайт працює:
+   ![alt text](https://github.com/m-marinka/ik-31-makar/blob/master/Lab_4/img/1.png)
+
+   ![alt text](https://github.com/m-marinka/ik-31-makar/blob/master/Lab_4/img/2.png)
     
 6. Оскільки веб-сайт готовий і працює, потрібно створити ще один контейнер із програмою моніторингу веб-сайту:
+    - створюю ще один Dockerfile, у якому поміщаю програму моніторингу (використовую ключ --file);
+    -  виконую білд імеджа та даю йому тег monitoring;
+    - запускаю два контейнери одночасно (у різних вкладках) та бачу, що програма моніторингу успішно доступається до сторінок Вашого веб-сайту (використовую ключ --net=host);
+    - комічу Dockerfile.site та результати роботи програми моніторингу, запущеної з Docker контейнера - файл server.log.
 
