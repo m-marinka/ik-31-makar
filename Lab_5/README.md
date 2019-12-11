@@ -44,4 +44,10 @@
     ```bash
             make docker-prune
     ```
-8. 
+8. Створюю директиву в `Makefile` для завантаження створених імеджів у Docker Hub репозиторій. Завантажую імеджі до репозиторію `mmarinka/lab5_devops` командою:
+    ```bash
+            make push
+    ```
+   - [Посилання на Docker Hub репозиторій](https://hub.docker.com/repository/docker/mmarinka/lab5_devops)
+ 
+9.  Видаляю створені та завантаженні імеджі. Створюю директиву `delete-images` в `Makefile`, яка автоматизує процес видалення імеджів. 
