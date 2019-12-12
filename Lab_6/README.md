@@ -17,4 +17,6 @@ Lab_6: Автоматизація за допомогою CI/CD серверів
    - переписую білд `lab_5` і додаю кроки `Makefile`, які робили push імеджів у `Docker Hub` репозиторій;
    - всі білди виконуються успішно:
    
-   
+   ![image](img/3.png)
+
+6. Посилання на  [Travis build](https://travis-ci.org/m-marinka/ik-31-makar).
