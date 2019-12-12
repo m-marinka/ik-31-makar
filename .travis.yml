@@ -1,0 +1,51 @@
+language: python
+
+python:
+  - "3.7"
+
+jobs:
+  include:
+    - stage: "Build Lab 2."
+      name: "Run tests for Lab 2"
+      python: 3.7
+      install:
+        - cd ./Lab_2/
+        - make install
+      script: make test || true
+    - stage: "Build Lab 3."
+      name: "Run Djungo Server and test it accessibility. Fail to run and test"
+      python: 3.7
+      install:
+        - cd ./Lab_3/
+        - chmod +x ./scripts/travis-build.sh
+        - pipenv install
+      script: ./scripts/travis-build.sh
+    - stage: "Build Lab 4."
+      name: "Build Docker images & Home task"
+      services:
+        - docker
+      install:
+        - cd ./Lab_4/
+      script:
+        - docker build -t mmarinka/lab4-examples:django-travis -f Dockerfile .
+        - docker images
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push mmarinka/lab4-examples:django-travis; else echo "PR skip deploy"; fi
+        - docker build -t mmarinka/lab4-examples:monitoring-travis -f Dockerfile.site .
+        - docker images
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push mmarinka/lab4-examples:monitoring-travis; else echo "PR skip deploy"; fi
+    - stage: "Build Lab 5."
+      name: "Build and run Docker images via make"
+      services:
+        - docker
+      install:
+        - cd ./Lab_5/
+        - make app
+        - make tests
+      script:
+        - make run
+        - make test-app
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; fi
+        - make push
+branches:
+  only:
+    - master
